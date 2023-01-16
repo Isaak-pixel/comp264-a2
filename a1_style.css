@@ -1,5 +1,5 @@
 body {
-  background-color: darkcyan;
+  background-color: royalblue;
   font-size: 125%;
 }
 
@@ -8,9 +8,10 @@ div {
 }
 
 #pokemon {
-  background-color: powderblue;
+  background-color: skyblue;
   display: inline-block;
   padding: 20px 40px;
   margin: 20px 20px;
   border-radius: 15px;
+  text-align: center;
 }
