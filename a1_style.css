@@ -1,12 +1,17 @@
+/*Create a background for the page.
+Also increase the size of the font to make it easier to read.*/
 body {
   background-color: royalblue;
   font-size: 125%;
 }
 
+/*Added extra padding to space out the cards, titles, and text that is displayed.*/
 div {
   padding: 10px;
 }
 
+/*Create a transition to change the background color and border color if one of
+the 'cards' displaying information of a Pokemon is hovered over*/
 #pokemon {
   background-color: skyblue;
   display: inline-block;
@@ -19,6 +24,7 @@ div {
   transition: background-color 2s, border-color 2s;
 }
 
+/*When a 'card' is hovered over, change the background color and border color.*/
 #pokemon:hover {
   background-color: lightgreen;
   border-color: forestgreen;
