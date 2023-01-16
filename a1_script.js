@@ -37,12 +37,12 @@ let candy_avg = (candy_count/data.pokemon.length).toFixed(2);
 //Lists the amount of Pokemon in the json file.
 //Also displays what the first[0] and last [.length-1] Pokemon are. It will always
 //display the last one in the list so it can be updated and still work.
-total.innerHTML = (`<p>The total amount of Pokemon included in this list is ${data.pokemon.length}.</p>
-<p>This includes all of the Generation 1 Pokemon ranging from ${data.pokemon[0].name} to ${data.pokemon[data.pokemon.length-1].name}.</p>`);
+total.innerHTML = (`<p>The total amount of Pokemon included in this list is <b>${data.pokemon.length}</b>.</p>
+<p>This includes all of the Generation 1 Pokemon ranging from <b>${data.pokemon[0].name}</b> to <b>${data.pokemon[data.pokemon.length-1].name}</b>.</p>`);
 
 //List the info of the Pokemon.
 output.innerHTML = info;
 
 //Display the amount of pokemon and what the average is across all of them.
-average_spawns.innerHTML = (`The average for the 'avg_spawns' value across all ${data.pokemon.length} Pokemon is ${spawn_dec}.`);
-candies.innerHTML = (`The average for the 'candy_count' value across all ${data.pokemon.length} Pokemon is ${candy_avg}.`);
+average_spawns.innerHTML = (`The average for the 'avg_spawns' value across all <b>${data.pokemon.length}</b> Pokemon is <b>${spawn_dec}</b>.`);
+candies.innerHTML = (`The average for the 'candy_count' value across all <b>${data.pokemon.length}</b> Pokemon is <b>${candy_avg}</b>.`);
