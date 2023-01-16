@@ -15,3 +15,15 @@ div {
   border-radius: 15px;
   text-align: center;
 }
+
+#pokemon:hover {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  from {background-color: skyblue;}
+  to {background-color: lightgreen;}
+}
