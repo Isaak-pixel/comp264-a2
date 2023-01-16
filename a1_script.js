@@ -15,6 +15,8 @@ for (let i = 0; i < data.pokemon.length; i++) {
                       <p><b>Number:</b> ${data.pokemon[i].num}</p>
                       <p><b>Type:</b> ${data.pokemon[i].type}</p>
                       <p><img src="${data.pokemon[i].img}"></p>
+                      <p><b>Height:</b> ${data.pokemon[i].height}</p>
+                      <p><b>Weight:</b> ${data.pokemon[i].weight}</p>
                       </div>`;
 }
 
