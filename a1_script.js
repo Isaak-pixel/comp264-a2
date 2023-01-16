@@ -1,7 +1,5 @@
-//Import data from the pokedex.json file to be used.
 import data from './pokedex.json' assert { type: 'json' };
 
-//Create various consts that will be used to print out content to the specified Id.
 const total = document.getElementById("total");
 const output = document.getElementById("output");
 const candies = document.getElementById("candies");
@@ -12,11 +10,7 @@ let info = "";
 let spawn_avg = 0;
 let candy_count = 0;
 
-//For loop that runs for however many pokemon are in the json file.
 for (let i = 0; i < data.pokemon.length; i++) {
-    /*Prints out the following in order:
-    Name, Number, Type, Image, Height, Weight. Each is in their own paragrapgh section.
-    Titles are bolded while the actual data pulled from the json file are not.*/
     info += `<div id="pokemon"><p><b>Name:</b> ${data.pokemon[i].name}</p>
                       <p><b>Number:</b> ${data.pokemon[i].num}</p>
                       <p><b>Type:</b> ${data.pokemon[i].type}</p>
@@ -26,19 +20,14 @@ for (let i = 0; i < data.pokemon.length; i++) {
                       </div>`;
 }
 
-//For loop that runs for however many pokemon are in the json file
 for (let i = 0; i < data.pokemon.length; i++) {
-  //Add to the candy_count let if the pokemon has a candy_count value from the json file.
-  //Skip it if it is undefined.
   if (data.pokemon[i].candy_count != undefined) {
     let candy_calc = data.pokemon[i].candy_count;
     candy_count += candy_calc;
   }
 }
 
-//For loop that runs for however many pokemon are in the json file
 for (let i = 0; i < data.pokemon.length; i++) {
-  //Add to the spawn_avg_calc let from the avg_spawns value from the json file.
   let spawn_avg_calc = data.pokemon[i].avg_spawns;
   spawn_avg += spawn_avg_calc;
 }
@@ -54,7 +43,6 @@ total.innerHTML = (`<p>The total amount of Pokemon included in this list is <b>$
 <p>This includes all of the Generation 1 Pokemon ranging from <b>${data.pokemon[0].name}</b> to <b>${data.pokemon[data.pokemon.length-1].name}</b>.</p>`);
 
 //List the info of the Pokemon.
-//Name, Number, Type, Image, Height, Weight
 output.innerHTML = info;
 
 //Display the amount of pokemon and what the average is across all of them.
