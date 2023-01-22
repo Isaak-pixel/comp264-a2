@@ -1,1 +1,3 @@
-#MULT213 Assignment 1
+# MULT213 Assignment 1
+
+## Explore Advanced JavaScript Techniques
