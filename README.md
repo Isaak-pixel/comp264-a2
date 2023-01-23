@@ -22,3 +22,7 @@ My choice was the `pokedex.json` file. Some of the information that I displayed 
   - Weight
 - Averages for some values, skipping over the Pokemon that did not have a calculated value attached to it
 - Shortening averages to 2 decimal places to avoid lengthy values
+
+For the CSS part of the assignment, I separated each Pokemon into their own unique 'card' that contains the same id.
+This way, I can easily edit all of the cards to give it the same properties. In this case I used a simple transition value to have each card changed to green when hovered over.
+I used other CSS values like centering the text on cards and giving some colour to the webpage to give it a bit more personality and character.
